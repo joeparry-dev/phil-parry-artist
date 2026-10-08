@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px 20px;
+}
+
+.site-title {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.site-subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 3.55px;
+    margin: 10px 0 0;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.artwork {
+    overflow: hidden;
+}
+
+.artwork--portrait {
+    aspect-ratio: 3 / 4;
+}
+
+.artwork--square {
+    aspect-ratio: 1 / 1;
+}
+
+.artwork--landscape {
+    aspect-ratio: 4 / 3;
+}
+
+.artwork--wide {
+    grid-column: span 2;
+}
+
+.artwork-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.artwork-row {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.artwork-row--top {
+    grid-template-columns: 0.656fr 1.001fr 0.660fr 0.720fr;
+}
+
+.artwork-row--bottom {
+    grid-template-columns: 1.006fr 1.483fr 0.569fr;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 0px 0 30px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #555;
+}
