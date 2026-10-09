@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio');
+});
+
 app.listen(3000, () => {
     console.log('Phil Parry site listening on port 3000!');
 });

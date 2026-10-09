@@ -9,24 +9,14 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <nav>
-            <a href="/">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Exhibitions</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="site-title">
-            Phil Parry
-        </div>
-        <p class="site-subtitle">Contemporary Figurative &amp; Seascape Painter</p>
-
-    </header>
+    <div class="home-heading">
+        <%- include('partials/header') %>
+            <h1 class="site-title">Phil Parry</h1>
+            <p class="site-subtitle">Contemporary Figurative &amp; Seascape Painter</p>
+    </div>
 
     <main>
         <section class="artwork-grid">
-
             <div class="artwork-row artwork-row--top">
                 <div class="artwork">
                     <img src="/images/IMG_0332.jpg" alt="Artwork by Phil Parry">
@@ -52,12 +42,42 @@
                     <img src="/images/GirlInaMulticolouredWaistcoat_OOB_1993.jpg" alt="Artwork by Phil Parry">
                 </div>
             </div>
+        </section>
 
+        <section class="artwork-grid-tablet">
+            <div class="artwork-row artwork-row--tablet-one">
+                <div class="artwork">
+                    <img src="/images/IMG_0332.jpg" alt="Artwork by Phil Parry">
+                </div>
+                <div class="artwork">
+                    <img src="/images/IMG_0336.jpg" alt="Artwork by Phil Parry">
+                </div>
+                <div class="artwork">
+                    <img src="/images/IMG_0338.jpg" alt="Artwork by Phil Parry">
+                </div>
+            </div>
+
+            <div class="artwork-row artwork-row--tablet-two">
+                <div class="artwork">
+                    <img src="/images/IMG_0363.jpg" alt="Artwork by Phil Parry">
+                </div>
+                <div class="artwork">
+                    <img src="/images/PinkBuoys_AOC_1987.jpg" alt="Artwork by Phil Parry">
+                </div>
+            </div>
+
+            <div class="artwork-row artwork-row--tablet-three">
+                <div class="artwork">
+                    <img src="/images/IMG_0373.jpg" alt="Artwork by Phil Parry">
+                </div>
+                <div class="artwork">
+                    <img src="/images/GirlInaMulticolouredWaistcoat_OOB_1993.jpg" alt="Artwork by Phil Parry">
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="site-footer">
-        <p>&copy; 2026 Phil Parry</p>
-    </footer>
+    <%- include('partials/footer') %>
+        <script src="/js/menu.js"></script>
 </body>
 
 </html>
